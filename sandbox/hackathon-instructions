@@ -1,0 +1,15 @@
+Unzip the sandbox-bank, sandbox-ws-api, and sandbox-cli zip files and install them as Python packages.  This can be done by navigating into each unpacked directory and using pip:
+`
+pip install .`
+
+This should be done in the following order:
+1. sandbox-bank
+2. sandbox-ws-api
+3. sandbox-cli
+
+Assuming the Python executable for the installation into which the packages were just installed is on your PATH, you should now be able to run the Sandbox API.
+
+`sbx devbank`
+
+The command will probably fail on the first invocation because the host `sandbox` isn't mapped to `localhost` in your OS's hosts -- go ahead and map it!
+
