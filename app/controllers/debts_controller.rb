@@ -8,13 +8,13 @@ class DebtsController < ApplicationController
   end
 
   def create
-    @debt = Debt.new(set_params)
+    @debt = Debt.new(debts_params)
     @debt.save
   end
 
   private
 
-    def set_params
+    def debts_params
       params.require(:debt).permit(:name)
     end
 end
